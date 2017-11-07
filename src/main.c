@@ -1,7 +1,7 @@
 /*******************************************************
 Nom ......... : main.c
-Role ........ : automate vérifiant les formats des heures
-                pour les types du langage C
+Role ........ : automate vÃ©rifiant les formats des heures
+                et dates en C
 Auteur ...... : Origo Patrick-Ivann & Lea Batlle-Font
 
 Compilation :
@@ -17,8 +17,8 @@ Running gcc -Wno-vla -Wall -ansi -Wpedantic main.c -o Devoir_maison_2.exe && sta
 #include "entreeSortie.h"
 
 // Fonction principale main
-// argc - nombre d'arguments passés dans argv
-// argv - tableau d'arguments passés lors du lancement du programme exécutable
+// argc - nombre d'arguments passÃ©s dans argv
+// argv - tableau d'arguments passÃ©s lors du lancement du programme exÃ©cutable
 
 // "Automate de lecture des heures\n"
 // "Format disponible : hh:mm:ss -> hh de 00-23, mm et ss de 00-59\n"
@@ -26,29 +26,29 @@ Running gcc -Wno-vla -Wall -ansi -Wpedantic main.c -o Devoir_maison_2.exe && sta
 int main(int argc, char *argv[])
 {
     int i = 0; // compteur pour la boucle
-    struct lTransitions *automate[NBETATS]; // Tableau de pointeurs vers listes des transitions d'état
-    int etatInitial, etatFinal; // variables que contiendront l'état initial et final de l'automate - lues dans le fichier
+    struct lTransitions *automate[NBETATS]; // Tableau de pointeurs vers listes des transitions d'Ã©tat
+    int etatInitial, etatFinal; // variables que contiendront l'Ã©tat initial et final de l'automate - lues dans le fichier
     short cdr; // code de retour
     char *tableHeuresTests[NBTEST]; // tableau de heures
-    FILE *fout = NULL; // fichier résultat des tests
+    FILE *fout = NULL; // fichier rÃ©sultat des tests
 
 
-    // TODO : Initialiser tous les éléments de la tableau 'automate' à NULL
+    // TODO : Initialiser tous les Ã©lÃ©ments de la tableau 'automate' Ã  NULL
     for (i = 0; i < argc; i++){
         automate [i] = NULL;
     }
-    // TODO : Initialiser tous les éléments de la tableau de test 'tableHeuresTests' à NULL
+    // TODO : Initialiser tous les Ã©lÃ©ments de la tableau de test 'tableHeuresTests' Ã  NULL
     for (i = 0; i < NBTEST; i++){
         tableHeuresTests [i] = NULL;
     }
-    // TODO : Lecture du fichier "automate.txt" (utiliser les fonctions déjà définies)
+    // TODO : Lecture du fichier "automate.txt" (utiliser les fonctions dÃ©jÃ  dÃ©finies)
     lireFichier(*&automate, &etatInitial, &etatFinal);
-    // TODO : Lire fichier de données de test "HeuresTests.txt" (utiliser les fonctions déjà définies)
+    // TODO : Lire fichier de donnÃ©es de test "HeuresTests.txt" (utiliser les fonctions dÃ©jÃ  dÃ©finies)
     lireFichierDates(argv);
-    // Ouvrir le fichier de résultats en écriture
+    // Ouvrir le fichier de rÃ©sultats en Ã©criture
     fout = fopen("./ResultatsHeuresTests.txt", "w");
     printf("\n\n\n");
-    // TODO : Vérifier si le fichier a bien été ouvert. Sinon, envoyer une erreur et sortir du programme
+    // TODO : VÃ©rifier si le fichier a bien Ã©tÃ© ouvert. Sinon, envoyer une erreur et sortir du programme
     if (fout == NULL){
         printf("Erreur, impossible d'ouvrir le fichier\n");
         exit (EXIT_FAILURE);
@@ -57,15 +57,15 @@ int main(int argc, char *argv[])
 
     while (i < 100){
          cdr = analyse(*tableHeuresTests, *&automate, etatInitial, etatFinal);
-       // TODO - Analyser ce mot avec l'automate (faire appel à des fonctions déjà définies)
+       // TODO - Analyser ce mot avec l'automate (faire appel Ã  des fonctions dÃ©jÃ  dÃ©finies)
         ecrireResultat(fout, cdr, *tableHeuresTests);
         i++;
-       // TODO - Ecrire le résultat de l'analyse dans le fichier résultats (faire appel à des fonctions déjà définies)
+       // TODO - Ecrire le rÃ©sultat de l'analyse dans le fichier rÃ©sultats (faire appel Ã  des fonctions dÃ©jÃ  dÃ©finies)
     }
     libererTransitions(automate);
-    // TODO - Libérer les transitions, qui sont les structures dynamiques de l'automate (faire appel à des fonctions déjà définies)
+    // TODO - LibÃ©rer les transitions, qui sont les structures dynamiques de l'automate (faire appel Ã  des fonctions dÃ©jÃ  dÃ©finies)
     fclose(fout);
-    // TODO : Fermer le fichier de résultats
+    // TODO : Fermer le fichier de rÃ©sultats
 
     return 0;
 }
