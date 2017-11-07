@@ -1,5 +1,5 @@
 # Devoir_maison_2 Implémentation d'un automate permettant de verifier des formats de dates et d'heures en C 
-	
+entreeSortie.h
 	void lireFichierDates(char **tableauDatesRetour)
 		Declaration de la fonction avec comme argument un pointeur de pointeur vers le tableauDatesRetour
 	void ecrireResultat(FILE *f,short cdr, char*mot)
