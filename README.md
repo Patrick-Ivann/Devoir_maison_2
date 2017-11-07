@@ -21,3 +21,216 @@ action.h
 		fonction qui vide la liste chainée apres utilisation prend en parametre un pointeur de pointeur sur automate
 		
 		
+Résultat console 
+	
+	
+		1:1:1
+ 
+		12:58:41
+ 
+		04:06:21
+ 
+		23:59:59
+ 
+		00:00:00
+ 
+		0:15:46
+ 
+		21:0:57
+ 
+		24:15:15
+ 
+		17:60:34
+ 
+		9:35:68
+ 
+		12:12-12
+ 
+		161:12:12
+ 
+		13:56:51:01
+ 
+		s1:12:12 
+		
+
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
+		(null) KO
+
